@@ -29,3 +29,13 @@ python manage.py sqlmigrate blog 0001
 
 启动开发服务器
 python manage.py shell
+
+
+# handle error
+处理站点地图的时候遇到了这个问题
+maps = sitemaps.values() 'function' object has no attribute 'values'
+
+
+# postgres数据库
+psql -U postgres
+口令是 root
