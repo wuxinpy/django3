@@ -39,3 +39,16 @@ maps = sitemaps.values() 'function' object has no attribute 'values'
 # postgres数据库
 psql -U postgres
 口令是 root
+
+# wsl安装redis
+wsl --install
+sudo apt-add-repository ppa:redislabs/redis
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install redis-server
+sudo service redis-server start
+redis-cli
+
+
+
+python manage.py runserver_plus --cert-file cert.crt
